@@ -5,6 +5,7 @@ date = 2022-10-01T15:00:00Z
 categories = ["usage"]
 tags = ["content", "shortcode", "feature"]
 [extra]
+disable_comments = false
 subtitle = "Data loader"
 music = ["65daysofstatic", "Default This"]
 +++

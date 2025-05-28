@@ -96,7 +96,7 @@ twitter = "@afsal2"
 author = "@user@server"
 
 [extra.comments]
-system = "none"
+system = "giscus"
 
 [extra.comments.cactus]
 guest_posting = true
@@ -105,11 +105,11 @@ site = "site_name"
 update_interval = 0
 
 [extra.comments.giscus]
-category = "Comments"
-category_id = ""
+category = "posts"
+category_id = "DIC_kwDOOyR-Hc4CqtM-"
 lang = "en"
-mapping = "pathname"
+mapping = "title"
 reactions = "1"
-repo = "user_name/repo"
-repo_id = ""
-strict = "1"
+repo = "afsalthaj/my-site-comments"
+repo_id = "R_kgDOOyR-HQ"
+strict = "0"
