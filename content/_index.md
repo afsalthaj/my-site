@@ -2,8 +2,7 @@
 template = "index.html"
 +++
 
-# Info
+# Whoami
 
-[Halve-Z](https://github.com/charlesrocket/halve-z) is a retro two-column theme for [Zola](https://github.com/getzola/zola). It features search, taxonomies, automatic color schemes, project cards, and a comment system.
+Author of [zio-config](https://github.com/zio/zio-config), [zio-constraintless](https://github.com/zio/zio-constraintless), active contributor to [golem](https://github.com/golemcloud/golem) and Functional Programming enthusiast
 
-The [documentation](https://github.com/charlesrocket/halve-z/blob/trunk/README.md) contains the full set of features and installation manuals.

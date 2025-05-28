@@ -1,106 +1,96 @@
 ###
-base_url = "https://halve-z.netlify.app"
-title = "Halve-Z Zola theme"
-description = "Two-column retro theme for Zola"
-default_language = "en"
 author = "charlesrocket"
+base_url = "https://halve-z.netlify.app"
+default_language = "en"
+description = "Two-column retro theme for Zola"
 theme = "halve-z"
+title = "Halve-Z Zola theme"
 
-compile_sass = true
-minify_html = true
-generate_feeds = true
 build_search_index = true
+compile_sass = true
+generate_feeds = true
 generate_sitemap = true
+minify_html = true
 
 taxonomies = [
-    { name = "categories", feed = true },
-    { name = "tags", feed = true },
+  {name = "categories", feed = true},
+  {name = "tags", feed = true},
 ]
 
 [search]
-include_title = true
+include_content = true
 include_description = true
 include_path = false
-include_content = true
+include_title = true
 index_format = "elasticlunr_json"
 
 [markdown]
+external_links_target_blank = true
 highlight_code = true
 highlight_theme = "css"
 highlight_themes_css = [
-    { theme = "OneHalfDark", filename = "syntax-theme-dark.css" },
-    { theme = "OneHalfLight", filename = "syntax-theme-light.css" },
+  {theme = "OneHalfDark", filename = "syntax-theme-dark.css"},
+  {theme = "OneHalfLight", filename = "syntax-theme-light.css"},
 ]
 render_emoji = false
-external_links_target_blank = true
 
 [slugify]
+anchors = "safe"
 paths = "safe"
 taxonomies = "safe"
-anchors = "safe"
 
 [extra]
+csp = true
 locale = "en_US"
 logo = "icon-192x192.png"
 manifest = "manifest.json"
 read_time = true
 toc = true
-csp = true
 
 [extra.placeholders]
-tags = false
 subtitle = false
+tags = false
 
 [extra.home]
-title = "Halve-Z"
-subtitle = "Zola theme"
-glitch = false
-logo = { enabled = false, height = "100", width = "100" }
 footer = true
+glitch = false
+logo = {enabled = false, height = "100", width = "100"}
+subtitle = "Thaj Afsal"
+title = "Afsal Thaj"
 
 [extra.images]
+categories = [
+  {name = "media", image = "https://raw.githubusercontent.com/bearcott/8bit-art/master/cities/urban.gif"},
+] 
+default_post = "bk-prk.png" #https://failsafe.monster/bk-prk.jpg
 home = "c1tyh4ll.png" #https://failsafe.monster/c1tyh4ll.png
 post_list = "bk-prk.png" #https://failsafe.monster/bk-prk.jpg
-default_post = "bk-prk.png" #https://failsafe.monster/bk-prk.jpg
-categories = [
-    { name = "media", image = "https://raw.githubusercontent.com/bearcott/8bit-art/master/cities/urban.gif" },
-]
 
 [extra.menu]
+links = [
+  {name = "Code", url = "/projects/"},
+]
 posts = true
 posts_label = "Posts"
-links = [
-    { name = "Code", url = "/projects/" },
-]
 
 [extra.footer]
-enabled = true
 author = true
 copyright = true
+enabled = true
 hash = true
-stack = true
 links = [
-    { name = "posts", url = "/posts/" },
+  {name = "posts", url = "/posts/"},
 ]
+stack = true
 
 [extra.social]
-email = "user_email"
-mastodon = "server/@user_name"
-twitter = "user_name"
-facebook = "user_name"
-codeberg = "username"
-github = "user_name"
-gitlab = "user_name"
 bitbucket = "user_name"
-stackoverflow = "12345/user_name"
-linkedin = "user_name"
-instagram = "user_name"
-lastfm = "user_name"
-twitch = "user_name"
-reddit = "user_name"
-#flickr = "user_name"
-keybase = "user_name"
-hackernews = "user_name"
+codeberg = "username"
+email = "afsal.taj06@gmail.com"
+github = "afsalthaj"
+instagram = "afzal.taj"
+linkedin = "afsal-thaj-10ab2842"
+twitter = "@afsal2"
 
 [extra.mastodon]
 author = "@user@server"
@@ -109,17 +99,17 @@ author = "@user@server"
 system = "none"
 
 [extra.comments.cactus]
-site = "site_name"
-page_size = 10
 guest_posting = true
+page_size = 10
+site = "site_name"
 update_interval = 0
 
 [extra.comments.giscus]
-repo = "user_name/repo"
-repo_id = ""
 category = "Comments"
 category_id = ""
-mapping = "pathname"
-strict = "1"
-reactions = "1"
 lang = "en"
+mapping = "pathname"
+reactions = "1"
+repo = "user_name/repo"
+repo_id = ""
+strict = "1"
